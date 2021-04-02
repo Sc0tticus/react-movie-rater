@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import MovieList from './components/movie-list';
 
 // useState is one of the available React hooks.
 
@@ -28,11 +29,8 @@ function App() {
 			<header className="App-header">
 				<h1>Movie Rater</h1>
 				<div className="layout">
-					<div>
-						{movies.map(movie => {
-							return <h2>{movie}</h2>;
-						})}
-					</div>
+					<MovieList />
+
 					<div>Movie list</div>
 					<div>Movie details</div>
 				</div>
